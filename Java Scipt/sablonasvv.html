@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+      <head>
+      	<title></title>
+      </head>
+      <body>
+      	<input type="button" value="Paspausk" onclick="aadFunction (4, 5)"/>
+      	<script>
+      		var aadFunction = function (x, y){
+      			    // switch(y){
+      				// case 5:
+      				// console.log('pasitaike penki');
+      				// break;
+      				// case 6:
+      				// console.log('pasitaike sesi');
+      				// break;
+      				// default:
+      				// console.log('kitas skaicius')
+      			//}
+
+      			var a=0;
+      			while(a < x){
+      				console.log('a reiksme yra ' + a);
+      				a++
+      			}
+
+
+      			var retries = 0;
+      			
+      			do{
+      				retries++;
+      				y = prompt ('Ivesk slaptazodi');
+
+      				if(Number(y) == 4){
+      					break;
+      				}
+
+      				
+
+      			}while (retries < 3);
+
+
+
+      			if(retries == 3){
+      				console.log ('Perdaug bandymu');
+      				return;
+      			}
+      			var suma = Number (x) + Number(y);
+      		    console.log('Atsakymas:'+suma);
+      		}
+      		// var suma = Add(5, 10);
+
+      		// function galiojimas(){
+      			// addFunction(5,5);
+      			// console.log(suma);
+      		
+
+
+      	</script>
+      	  
+      </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+      <head>
+      	<title></title>
+      </head>
+      <body>
+      	<input type="text" id="name"/>
+      	<input type="button" value="Paspausk" onclick="priskirti()"/>
+      	<div id="label"></div> 
+      <script>
+      	function priskirti(){
+      		var vardas = document.getElementById('name').value;
+      		document.getElementById('label').innerHTML = vardas;
+      	}
+
+      </script>
+      </body>
+</html>
